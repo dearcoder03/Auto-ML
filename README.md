@@ -18,5 +18,5 @@ This is a simple implementation of an Auto ML clone using TensorFlow.js. It allo
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/auto-ml-clone.git
-cd auto-ml-clone
+git clone https://github.com/dearcoder03/Auto-ML.git
+cd Auto-ML
