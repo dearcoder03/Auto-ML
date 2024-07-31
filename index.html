@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+</head>
+<body>
+    <h1> Image Classification</h1>
+    <div class="main">
+        <div id="data-collection">
+            <h2>Data Collection</h2>
+            <video id="webcam" autoplay playsinline width="224" height="224"></video>
+            <div id="class-buttons"></div>
+            <button id="capture">Capture Image</button>
+        </div>
+
+        <div id="training">
+            <h2>Training</h2>
+            <button id="train">Train Model</button>
+            <div id="progress"></div>
+        </div>
+
+        <div id="testing">
+            <h2>Testing</h2>
+            <video id="test-webcam" autoplay playsinline width="224" height="224"></video>
+            <div id="result"></div>
+            <button id="test">Test Model</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
